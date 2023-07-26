@@ -1,0 +1,38 @@
+.main {
+  min-height: 100vh;
+  background-image: url('../../assets/max-lawton-ZJSe0tL8ZWk-unsplash.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+
+  .history_container {
+    padding: 6rem;
+    margin: 0 auto;
+    width: 940px;
+
+    .title {
+      position: relative;
+      font-size: 96px;
+      font-weight: 700;
+      color: #4d4d4d;
+      width: fit-content;
+
+      .title_name {
+        position: absolute;
+        font-size: 32px;
+        font-weight: 600;
+        color: #404d80;
+        bottom: 34px;
+        left: 114px;
+      }
+    }
+
+
+    .text {
+      font-size: 18px;
+      font-weight: 400;
+      color: #3e4358;
+      padding-left: 50px;
+    }
+  }
+}

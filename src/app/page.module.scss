@@ -5,49 +5,6 @@
   align-items: center;
   padding: 1rem;
 
-  .nav {
-    display: flex;
-    padding: 0 20rem;
-    width: 100%;
-    justify-content: space-between;
-
-    .icon {
-      border: 1px solid #535353;
-      border-radius: 50%;
-      padding: 5px;
-      height: 44px;
-      width: 44px;
-      background-color: #ffffffb8;
-      transition: all 0.5s ease;
-
-      &:hover {
-        background-color: #fff;
-      }
-    }
-
-    .nav_container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-
-      .link_text {
-        text-decoration: underline;
-        font-style: italic;
-        text-transform: uppercase;
-        transition: all 0.3s ease;
-        font-size: 14px;
-        font-weight: 700;
-        color: #535353;
-
-        &:hover {
-          text-decoration: none;
-          color: #fff;
-        }
-      }
-    }
-  }
-
   .heading_container {
     padding: 6rem 8rem;
 
