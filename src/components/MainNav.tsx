@@ -1,6 +1,5 @@
 import styles from './mainNav.module.scss'
 import Link from 'next/link'
-import { PiMountainsDuotone } from 'react-icons/pi'
 import IconLink from './IconLink'
 
 interface MainNavProps {
