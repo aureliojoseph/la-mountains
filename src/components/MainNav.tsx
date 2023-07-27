@@ -1,22 +1,20 @@
 import styles from './mainNav.module.scss'
 import Link from 'next/link'
 import { PiMountainsDuotone } from 'react-icons/pi'
+import IconLink from './IconLink'
 
 interface MainNavProps {
-  prime: string
-  sec: string
+  primetext: string
+  sectext: string
 }
 
-export default function MainNav({ prime, sec }: MainNavProps) {
+export default function MainNav({ primetext, sectext }: MainNavProps) {
   return (
     <nav className={styles.nav}>
-      <Link className={styles.icon_link} href={'/'}>
-        <PiMountainsDuotone className={styles.icon} />
-        <div className={styles.icon_text}>
-          <p className={styles.prime}>{prime}</p>
-          <p className={styles.sec}>{sec}</p>
-        </div>
-      </Link>
+      <IconLink
+        textprime={primetext}
+        textsec={sectext}
+      />
       <div className={styles.nav_container}>
         <Link
           className={styles.link_text}

@@ -4,7 +4,7 @@ import MainNav from '@/components/MainNav'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <MainNav prime={''} sec={''} />
+      <MainNav primetext={''} sectext={''} />
 
       <div className={styles.heading_container}>
         <h1 className={styles.prime_heading}>LOSANGELES</h1>

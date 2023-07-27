@@ -76,7 +76,7 @@ export default function Page() {
 
   return (
     <main className={styles.main}>
-      <MainNav prime={'LOSANGELES'} sec={'MOUNTAINS'} />
+      <MainNav primetext={'LOSANGELES'} sectext={'MOUNTAINS'} />
 
       <div className={styles.history_container}>
         <h1 className={styles.title}>
