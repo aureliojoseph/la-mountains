@@ -26,9 +26,9 @@ export default function MainNav({ prime, sec }: MainNavProps) {
         </Link>
         <Link
           className={styles.link_text}
-          href={'/team'}
+          href={'/climb'}
           >
-            02. Team
+            02. Climb
         </Link>
       </div>
     </nav>

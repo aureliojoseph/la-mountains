@@ -1,0 +1,41 @@
+.main {
+  min-height: 100vh;
+  background-image: url('../../assets/phil-botha-_vB26NINdrs-unsplash.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem 0;
+
+  .climb_container {
+    padding: 0.5rem 6rem;
+    margin: 0 auto;
+    width: 940px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .title {
+      position: relative;
+      font-size: 96px;
+      font-weight: 700;
+      color: #4d4d4d;
+      width: fit-content;
+
+      .title_name {
+        position: absolute;
+        font-size: 32px;
+        font-weight: 600;
+        color: #404d80;
+        bottom: 34px;
+        left: 130px;
+      }
+    }
+
+
+    .text {
+      font-size: 14px;
+      font-weight: 400;
+      color: #3e4358;
+      padding-left: 50px;
+    }
+  }
+}

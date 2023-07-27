@@ -1,0 +1,40 @@
+.sub_nav_container {
+  display: flex;
+  width: 100%;
+  background-color: #404d80;
+  gap: 20px;
+  height: 31px;
+  align-items: center;
+  padding-left: 15rem;
+
+  .sub_nav__text,
+  .selected {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+
+  .sub_nav__text {
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #DBDBDB;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .selected {
+    color: #404d80;
+    background-color: #DBDBDB;
+    text-decoration: underline;
+    padding: 8px 10px;
+  }
+}
