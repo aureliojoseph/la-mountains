@@ -6,9 +6,9 @@ export default function Schedule({ data }: ScheduleProps) {
     <div className={styles.schedule}>
       <h1>SCHEDULE</h1>
       <ul>
-        {data.map((item) => (
+        {data.map((item, index) => (
           <li>
-            <div>
+            <div key={index}>
               <p>{ item.date }</p>
               <p>{ item.text }</p>
             </div>
