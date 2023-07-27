@@ -58,7 +58,7 @@ const photoGallery = [
 ]
 
 const renderPhotos = photoGallery.map((photo) => (
-  <div>
+  <div key={photo.alt}>
     <img
       src={photo.src}
       alt={photo.alt}

@@ -6,7 +6,7 @@ export default function Schedule({ data }: ScheduleProps) {
     <div className={styles.schedule}>
       <h1>SCHEDULE</h1>
       <ul>
-        {data.map((item, index) => (
+        {data.map((item) => (
           <li>
             <div>
               <p>{ item.date }</p>
