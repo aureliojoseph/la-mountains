@@ -6,6 +6,7 @@ import MainNav from '@/components/MainNav'
 import SubNav from '@/components/SubNav'
 import Schedule from '@/components/Schedule'
 import DateTextItem from '../../types/scheduleProps'
+import Footer from '@/components/Footer'
 
 export default function Page() {
   const [isMountain1Selected, setIsMountain1Selected] = useState(true)
@@ -33,27 +34,31 @@ export default function Page() {
   ]
 
   return (
-    <main className={styles.main}>
-      <MainNav prime={'LOSANGELES'} sec={'MOUNTAINS'} />
+    <div>
+      <main className={styles.main}>
+        <MainNav primetext={'LOSANGELES'} sectext={'MOUNTAINS'} />
 
-      <div className={styles.climb_container}>
-        <h1 className={styles.title}>
-          02.
-          <span className={styles.title_name}>CLIMB</span>
-        </h1>
-        <p className={styles.text}>Ducimus reiciendis totam itaque, reprehenderit autem molestiae quibusdam ipsum sed eligendi veniam molestias eaque nemo minus et consequuntur velit sint voluptates. Sequi!</p>
-      </div>
+        <div className={styles.climb_container}>
+          <h1 className={styles.title}>
+            02.
+            <span className={styles.title_name}>CLIMB</span>
+          </h1>
+          <p className={styles.text}>Ducimus reiciendis totam itaque, reprehenderit autem molestiae quibusdam ipsum sed eligendi veniam molestias eaque nemo minus et consequuntur velit sint voluptates. Sequi!</p>
+        </div>
 
-      <SubNav
-        isMountain1Selected={isMountain1Selected}
-        onMountain1Select={handleMountain1Select}
-        onMountain2Select={handleMountain2Select}
+        <SubNav
+          isMountain1Selected={isMountain1Selected}
+          onMountain1Select={handleMountain1Select}
+          onMountain2Select={handleMountain2Select}
 
-      />
+        />
 
-      { isMountain1Selected && <Schedule data={mountain1Data} />}
+        { isMountain1Selected && <Schedule data={mountain1Data} />}
 
-      { !isMountain1Selected && <Schedule data={mountain2Data} />}
-    </main>
+        { !isMountain1Selected && <Schedule data={mountain2Data} />}
+      </main>
+
+      <Footer />
+    </div>
   )
 }
