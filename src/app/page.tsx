@@ -6,6 +6,8 @@ export default function Home() {
     <main className={styles.main}>
       <MainNav primetext={''} sectext={''} />
 
+      <h1>TESTE</h1>
+
       <div className={styles.heading_container}>
         <h1 className={styles.prime_heading}>LOSANGELES</h1>
         <h1 className={styles.sec_heading}>MOUNTAINS</h1>
